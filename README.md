@@ -1,6 +1,5 @@
 # Let's Do Something
 
-Hi! This is my first project working with Angular.
 
 This web app is an activity manager that gets data from Bored API: https://www.boredapi.com/
 
