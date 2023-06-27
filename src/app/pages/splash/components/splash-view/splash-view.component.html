@@ -1,0 +1,8 @@
+<section class="splash">
+    <div class="splash__icons-container">
+        <img *ngFor="let icon of welcomeIcons; let i = index" src="{{icon.src}}" alt="{{icon.alt}}" class="splash__icon" 
+        [@enter]="{ value: '', params: { delay: i * 1500 } }">
+    </div>
+    <p *ngFor="let sentence of welcomeMessage" class="splash__text">{{sentence}}</p>
+    <a href="/explore" class="splash__btn">{{startButton}}<i class="fas fa-arrow-right"></i></a>
+</section>

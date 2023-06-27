@@ -1,0 +1,46 @@
+@import "../../../../../styles/mixin";
+
+.splash {
+    max-width: 480px;
+    margin: 110px auto 50px auto;
+    padding: 0 50px;
+    font-size: 18px;
+
+    &__icons-container {
+        min-height: 65px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__icon {
+        width: 65px;
+    }
+
+    &__btn {
+        @include button;
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 15px;
+    }
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    .splash {
+        margin-top: 150px;
+        font-size: 20px;
+
+        &__icons-container {
+            min-height: 100px;
+            justify-content: space-around;
+        }
+
+        &__icon {
+            width: 100px;
+        }
+    }
+}

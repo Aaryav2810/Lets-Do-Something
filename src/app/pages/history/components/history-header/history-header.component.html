@@ -1,0 +1,8 @@
+<aside>
+    <div class="header-block">
+        <span class="header-block__tag header-block__tag--active" 
+        *ngFor="let tag of historyHeaderContent.headerTags" 
+        [ngClass]="{'header-block__tag--inactive' : pagesService.classified.length == 0 || !visibleTags.includes(tag)}"
+        (click)="pagesService.classified.length == 0 ? null : onTagClick($event, tag)">{{tag}}</span>
+    </div>
+</aside>

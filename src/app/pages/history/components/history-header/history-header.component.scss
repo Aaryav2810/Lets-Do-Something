@@ -1,0 +1,36 @@
+@import "../../../../../styles/mixin";
+
+aside {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 684px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.header-block {
+    margin: 70px 15px 0 15px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__tag {
+        @include button;
+        margin: 5px;
+
+        &--active {
+            background-color: var(--color-bright);
+        }
+
+        &--inactive {
+            background-color: var(--grey-light);
+
+            &:hover {
+                background-color: var(--grey-light);
+            }
+        }
+    }
+}

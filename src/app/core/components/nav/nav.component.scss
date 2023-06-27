@@ -1,0 +1,67 @@
+header {
+    color: var(--white);
+    width: 100%;
+    background-color: var(--color-bright);
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+
+.navbar {
+    max-width: 992px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+
+        & span:first-of-type {
+            &:hover {
+                animation: rotate-center 10s linear infinite both;
+            }
+        }
+
+        & span:last-of-type {
+            margin-left: 10px;
+            display: none;
+
+            @media screen and (min-width: 520px) {
+                display: inline;
+            }
+        }
+    }
+
+    &__link {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 18px 25px;
+        text-transform: uppercase;
+        color: var(--white);
+        transition: 0.4s;
+
+        &:hover {
+            background-color: var(--color-dark);
+        }
+
+        &:visited {
+            color: var(--white);
+        }
+
+        &:active {
+            color: var(--white);
+        }
+    }
+}
+
+.fa-puzzle-piece {
+    font-size: 25px;
+    transform: rotate(30deg);
+}

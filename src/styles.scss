@@ -1,0 +1,22 @@
+@import './styles/colors';
+@import './styles/fonts';
+@import './styles/variables';
+@import './styles/mixin';
+@import './styles/keyframes';
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--grey-dark);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.d-none {
+    display: none;
+}

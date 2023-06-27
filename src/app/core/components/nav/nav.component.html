@@ -1,0 +1,11 @@
+<header>
+    <nav>
+        <div class="navbar">
+            <div class="navbar__title">
+                <span><i class="fas fa-puzzle-piece"></i></span>
+                <span>Let's Do Something</span>
+            </div>
+            <div><span *ngFor="let link of navbar"><a [routerLink]="link.navUrl" class="navbar__link">{{link.navText}}</a></span></div>
+        </div>
+    </nav>
+</header>

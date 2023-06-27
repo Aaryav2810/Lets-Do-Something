@@ -1,0 +1,93 @@
+@import "../../../../styles/mixin";
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    min-width: 260px;
+    max-width: 260px;
+    height: 210px;
+    border: 1px solid var(--grey-light);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__title {
+        text-align: center;
+        font-size: 16px;
+        flex-grow: 1;
+    }
+
+    &__data {
+        display: flex;
+        justify-content: center;
+
+        &--name {
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        &--info {
+            width: 100px;
+            text-transform: capitalize;
+        }
+    }
+
+    &__btn-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__btn {
+        @include button;
+
+    }
+
+    &--education {
+        border-color: var(--color-education);
+        background: linear-gradient(5deg, rgba(250, 210, 225, 0.5) 0%, rgba(250, 210, 225, 0) 100%);
+    }
+
+    &--recreational {
+        border-color: var(--color-recreational);
+        background: linear-gradient(5deg, rgba(240, 239, 235, 0.5) 0%, rgba(240, 239, 235, 0) 100%);
+    }
+
+    &--social {
+        border-color: var(--color-social);
+        background: linear-gradient(5deg, rgba(234, 228, 233, 0.5) 0%, rgba(234, 228, 233, 0) 100%);
+    }
+
+    &--diy {
+        border-color: var(--color-diy);
+        background: linear-gradient(5deg, rgba(253, 226, 228, 0.5) 0%, rgba(253, 226, 228, 0) 100%);
+    }
+
+    &--charity {
+        border-color: var(--color-charity);
+        background: linear-gradient(5deg, rgba(226, 236, 233, 0.5) 0%, rgba(226, 236, 233, 0) 100%);
+    }
+
+    &--cooking {
+        border-color: var(--color-cooking);
+        background: linear-gradient(5deg, rgba(255, 241, 230, 0.5) 0%, rgba(255, 241, 230, 0) 100%);
+    }
+
+    &--relaxation {
+        border-color: var(--color-relaxation);
+        background: linear-gradient(5deg, rgba(223, 231, 253, 0.5) 0%, rgba(223, 231, 253, 0) 100%);
+    }
+
+    &--music {
+        border-color: var(--color-music);
+        background: linear-gradient(5deg, rgba(205, 218, 253, 0.5) 0%, rgba(205, 218, 253, 0) 100%);
+    }
+
+    &--busywork {
+        border-color: var(--color-busywork);
+        background: linear-gradient(5deg, rgba(190, 225, 230, 0.5) 0%, rgba(190, 225, 230, 0) 100%);
+    }
+}

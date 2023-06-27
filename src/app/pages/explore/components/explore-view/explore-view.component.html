@@ -1,0 +1,6 @@
+<section class="gallery">
+    <div *ngFor="let activity of apiDataList" [@enter] [@leave]>
+        <app-card [activity]="activity" (discardClickEvent)="onDiscardClick($event)"
+            (saveClickEvent)="onSaveClick($event)"></app-card>
+    </div>
+</section>
